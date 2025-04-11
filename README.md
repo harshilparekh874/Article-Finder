@@ -60,7 +60,7 @@ Copy
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-Running Locally
+# Running Locally
 To run the application locally, execute:
 
 bash
@@ -68,7 +68,7 @@ Copy
 python app.py
 Then, open your browser and navigate to http://127.0.0.1:5000/ to use Article-Finder.
 
-Deployment
+# Deployment
 Article-Finder can be deployed on platforms such as Render.
 
 Render Settings:
@@ -97,10 +97,10 @@ In app.py, update the NewsAPI key by replacing:
 
 python
 Copy
-NEWS_API_KEY = "5671956c374a43e699defd6923b1b02c"
+NEWS_API_KEY = ""
 with your actual NewsAPI key.
 
-Search Types:
+# Search Types:
 The application supports three search types:
 
 academic
@@ -109,7 +109,7 @@ news
 
 wikipedia
 
-Troubleshooting
+# Troubleshooting
 Template Not Found:
 Ensure that the templates directory is in the same folder as app.py and that the file names are exactly index.html and results.html (case-sensitive).
 
@@ -119,13 +119,13 @@ If queries return no results, try using specific, known keywords and verify API 
 Connection Errors:
 Check that your API keys are valid, confirm your network connection, and inspect error logs to troubleshoot issues with external API calls.
 
-Contributing
+# Contributing
 Contributions are welcome!
 Feel free to fork this repository and submit pull requests for improvements or bug fixes. For major changes, please open an issue first to discuss your proposed changes.
 
-License
+# License
 This project is open source and available under the MIT License.
 
-Contact
+# Contact
 For questions, suggestions, or feedback, please contact harshilparekh874@gmail.com.
 
