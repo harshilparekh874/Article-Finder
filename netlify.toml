@@ -1,6 +1,6 @@
 [build]
   command = "pip install -r requirements.txt"
-  publish = "."    # Publish from the repository root
+  publish = "build"  # or leave it blank if you have no static files
   functions = "netlify/functions"
 
 [[redirects]]
