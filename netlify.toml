@@ -1,15 +1,9 @@
 [build]
-  # For a Flask app as a serverless function, you might not need a build command if there are no static assets.
-  # If you need to run any commands (e.g., pip install), you could specify:
   command = "pip install -r requirements.txt"
-  # Publish directory is where static assets live. If you don't have a static build, you can leave this blank.
-  publish = "build"
-  # Point Netlify to the folder containing your functions.
+  publish = "."    # Publish from the repository root
   functions = "netlify/functions"
 
 [[redirects]]
-  # This will route all incoming requests to your serverless function.
   from = "/*"
   to = "/.netlify/functions/wsgi_handler"
   status = 200
-
